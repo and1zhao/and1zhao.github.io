@@ -1,0 +1,7 @@
+- name: Team Management
+  percentage: 95
+  color: info
+
+- name: LaTeX
+  percentage: 60
+  color: success

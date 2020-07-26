@@ -1,0 +1,33 @@
+- title: SDE Intern, AWS Elemental
+  from: May 2020
+  to: Present
+  description: As an intern on the AWS Elemental Live team, I am building a tool to convert video
+               of different formats into industry standard SMPTE-2110 format. This was done
+               through intergration of FFmpeg libraries to demux, decode, and scale video input
+               into a format suitable for SMPTE-2110. This is a tool that was especially needed for
+               engineers on the Live Inputs and Outputs teams, as currently they could only test
+               SMPTE-2110 output on very expensive machinery, but now this was possible on their
+               own personal laptops. More details of this virtual internship can be found on my blog.
+
+- title: Software Engineer Intern, PayPal
+  from: May 2019
+  to: August 2019
+  description: As an intern at PayPal, there was a need to aggregate support alerts in flagging 
+               repeated issues and larger patterns from these alerts. Consequently, I built a 
+               full-stack tool to automate pulling in of alerts from PagerDuty and fill out
+               appropriate information about the alert. The front end was done through Node.js
+               for search functionality, which would be then transferred to Elasticsearch for
+               database searching. My tool was put into production by the end of my internship
+               and I was in talks with other neighboring teams to implement my tool for their
+               teams as well.
+
+- title: Student, UC Berkeley
+  from: August 2018
+  to: Present
+  description: I am currently double majoring in Computer Science and Statistics at UC Berkeley.
+               Relevant coursework I've taken include Intro to Machine Learning, Probability for 
+               Data Science, Algorithms, Machine Structures, and Data Structures. I'm currently
+               taking Concepts of Statistics over the summer and will take courses in Stochastic
+               Processes, Computer Security, and Operating Systems in the fall. I'm a part of 
+               Upsilon Pi Epsilon, the CS Honor Society at Cal, and was a former project manager
+              and Internal VP of Seed Base Consulting. 

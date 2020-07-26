@@ -1,66 +1,86 @@
-title: Derrick Wells – Independent Product Designer
-logo:  # you can add own logo.
-description: Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love.
-baseurl: "/derrick" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+### Site Settings ###
+title               : Andy Zhao
+description         : >-
+                      Tabs > Spaces.
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : and1zhao/and1zhao.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+remote_theme        : and1zhao/and1zhao.github.io
 
 
-# Author Settings
-author:
-  name: Derrick Wells
-  image: '/assets/img/01.jpg'
-  job: Independent Product Designer
-  bio: Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love.
-  email: forexample@website.com
-
-
-# Contact links
-contact:
-  - name: Twitter
-    link: https://twitter.com/
-  - name: Facebook
-    link: https://facebook.com/
-  - name: Instagram
-    link: https://instagram.com/
-
-
-# Comment Section (Disqus)
-disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
-
-
-# Google Analytics
-google-analytics: # add your identifier. For example UA-99631805-1.
-
-
-# Build settings
-markdown: kramdown
-permalink: pretty
+### Plugins ###
 plugins:
-  - jekyll-sitemap
-  - jekyll/tagging
+  - jemoji
 
-# Pages Path
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+
+
+### Author Info ###
+author:
+  name              : Andy Zhao
+  image             : https://i.imgur.com/uyDNQnn.jpg
+  behance           : your_username
+# dribbble          : your_username
+  email             : andy.zhao@berkeley.edu
+# facebook          : your_username
+  github            : and1zhao
+# gitlab            : your_username
+  instagram         : and1_zhao
+# kaggle            : your_username
+  linkedin          : andyzhao2000
+# medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+# twitter           : your_username
+# vimeo             : your_username
+# youtube           : your_channel_name
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+### Disqus ###
+disqus: your-short-name-disqus                          # Your website Shortname on disqus
+
+
+### Analytics ###
+analytics:
+  enabled: false                                        # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
+
+
+### Defaults for collections ###
 defaults:
   - scope:
-      path: '_pages'
+      path: ""
+      type: "projects"
     values:
-      permalink: /:basename:output_ext
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false                                   # Set to true to enable disqus comments
 
-include:
-  - _pages
-
-# Tags
-tag_page_dir:         tag
-tag_page_layout:      tag-page
-tag_permalink_style:  pretty
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
-
-# Exclude from processing.
+### Exclude from processing ###
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
