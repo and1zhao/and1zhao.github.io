@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Andy Zhao
 description         : >-
-                      Tabs > Spaces.
+                      Currently a WIP!
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : and1zhao/and1zhao.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : and1zhao/and1zhao.github.io
